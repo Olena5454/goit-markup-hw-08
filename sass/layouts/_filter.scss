@@ -1,0 +1,14 @@
+/* ------------------Filter------------------ */
+
+.list-filter {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-btn:first-child .button-secondary {
+  max-width: 73px;
+  padding: 6px 25px;
+}

@@ -1,0 +1,58 @@
+/* ----------------Button---------------- */
+
+.button-primary {
+  border-radius: 4px;
+  height: 50px;
+  min-width: 216px;
+
+  font-family: inherit;
+  color: var(--color-btn);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  @include font(16px, 1.88, 0.06em);
+  // font-size: 16px;
+  // line-height: 1.88;
+  // letter-spacing: 0.06em;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--title-text-color);
+    background-color: var(--color-btn);
+  }
+}
+
+.button-secondary {
+  display: block;
+  padding: 6px 22px;
+
+  font-family: inherit;
+  color: var(--title-text-color);
+  background-color: var(--color-btn);
+  font-weight: 500;
+  @include font(16px, 1.63, 0.03em);
+  // font-size: 16px;
+  // line-height: 1.63;
+  //   letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+  border-color: transparent;
+  border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--color-btn);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
