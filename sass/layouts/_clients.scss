@@ -13,13 +13,28 @@
 
 .clients-list {
   display: flex;
+  // flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
 }
 
 .clients-list-item {
-  width: 170px;
-  height: 92px;
+  // width: 170px;
+  // height: 92px;
+  // width: 100%;
+  width: calc((100% - 30px) / 2);
+
+  @include tablet {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @include desktop {
+    width: calc((100% - 90px) / 6);
+  }
 }
 
 .clients-list-link {

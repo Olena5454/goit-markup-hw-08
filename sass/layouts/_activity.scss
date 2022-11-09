@@ -1,26 +1,51 @@
 /*--------------- Activity----------------- */
 
-.activity {
-  padding-top: 0;
+.section.activity {
+  @media screen and (max-width: 1199px) {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
+  @include desktop {
+    padding-top: 0;
+  }
 }
 
 .activity__list {
-  display: flex;
-  gap: 30px;
+  width: 100%;
+
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .activity__item {
-  width: calc((100% - 60px) / 3);
+  //  width: calc((100% - 60px) / 3);
+  @include desktop {
+    // width: calc((100% - 60px) / 3);
+   @include calc(3);
+  }
 }
 
-.activity__title,
-.team-title {
-  margin-bottom: 50px;
-  @extend %title;
-  // font-size: 36px;
-  // line-height: 1.2;
-  // text-align: center;
-  // letter-spacing: 0.03em;
+.activity__title {
+  @include desktop {
+    margin-bottom: 50px;
+    // @extend %title;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
 }
 
 .activity__thumb {
