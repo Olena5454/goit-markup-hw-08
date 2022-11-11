@@ -2,9 +2,11 @@
 
 footer {
   padding: 60px 15px;
-  margin: 0 auto;
 
   background: #2f303a;
+  @include desktop {
+    margin: 0 auto;
+  }
 }
 
 .footer-address {
@@ -12,10 +14,10 @@ footer {
 }
 
 .logo__footer--dark {
-   color: var(--color-hero-text);
-   &:hover {
-  color: var(--accent-color);
-}
+  color: var(--color-hero-text);
+  &:hover {
+    color: var(--accent-color);
+  }
 }
 
 a.logo.link:focus .logo__footer--dark:not(:focus) {
@@ -23,9 +25,12 @@ a.logo.link:focus .logo__footer--dark:not(:focus) {
 }
 
 .address-soc {
-  display: flex;
-  align-items: baseline;
-  gap: 70px;
+  display: none;
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
+  }
 }
 
 .footer-soc-title {
@@ -72,7 +77,10 @@ a.logo.link:focus .logo__footer--dark:not(:focus) {
 /* ----------------Address---------------- */
 
 .list-address-item {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+  @include desktop {
+    margin-bottom: 9px;
+  }
 }
 
 ul.list.address:nth-child(1) {
@@ -121,7 +129,7 @@ ul.list.address:nth-child(1) {
 }
 
 .subscribe-email {
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
 
@@ -130,6 +138,18 @@ ul.list.address:nth-child(1) {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  }
+  @include tablet {
+    width: 450px;
+  }
+  @include desktop {
+    width: 358px;
+  }
 }
 
 .button-submit.subscribe-button {
@@ -137,4 +157,47 @@ ul.list.address:nth-child(1) {
   gap: 10px;
   margin: 0;
   padding: 10px 28px;
+}
+
+.mob-address-soc {
+  text-align: center;
+  @include desktop {
+    display: none;
+  }
+}
+
+.mob-submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.mob-list-address {
+  margin-top: 20px;
+}
+
+.mob-footer-address-logo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.mob-footer-soc {
+  margin-top: 60px;
+}
+
+.mob-form-subscribe {
+  margin-top: 60px;
+}
+
+.mob-footer-tablet {
+  @include tablet {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-left: 69px;
+    padding-right: 96px;
+  }
 }
