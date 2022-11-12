@@ -2,7 +2,7 @@
 
 .projects-title {
   margin-bottom: 4px;
-  width: 100%;
+  // width: 100%;
   @include font(18px, 2, 0.06em);
   // font-size: 18px;
   // line-height: 2;
@@ -30,7 +30,7 @@
   width: 100%;
 
   @include tablet {
-    width: calc((100% - 60px) / 2);
+    @include calc(2);
     // &:nth-child(2n) {
     //   margin-right: 0px;
     // }
@@ -40,10 +40,10 @@
   }
 
   @include desktop {
-    width: calc((100% - 60px) / 3);
+    @include calc(3);
     margin-right: 30px;
     margin-bottom: 30px;
-        &:nth-child(3n) {
+    &:nth-child(3n) {
       margin-right: 0px;
     }
 
@@ -99,5 +99,11 @@
 
   .item-projects:hover & {
     transform: translateY(0);
+  }
+}
+
+.list-projects .item-projects:first-child .item-projects-group {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 56px;
   }
 }

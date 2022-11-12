@@ -33,7 +33,7 @@
   //  width: calc((100% - 60px) / 3);
   @include desktop {
     // width: calc((100% - 60px) / 3);
-   @include calc(3);
+    @include calc(3);
   }
 }
 
