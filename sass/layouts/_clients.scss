@@ -1,14 +1,17 @@
 /* -----------------Clients--------------- */
 
 .clients-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-  font-weight: 700;
-  @extend %title;
-  //   font-size: 36px;
-  //   line-height: 1.17;
-  //   text-align: center;
-  //   letter-spacing: 0.03em;
+  @include desktop {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .clients-list {
@@ -23,17 +26,20 @@
 }
 
 .clients-list-item {
-  // width: 170px;
-  // height: 92px;
-  // width: 100%;
-  width: calc((100% - 30px) / 2);
+  // width: calc((100% - 30px) / 2);
+  height: 92px;
+  @include calc(2);
 
   @include tablet {
-    width: calc((100% - 60px) / 3);
+    // width: calc((100% - 60px) / 3);
+    @include calc(3);
   }
 
   @include desktop {
-    width: calc((100% - 90px) / 6);
+    width: 170px;
+    width: 100%;
+    // width: calc((100% - 90px) / 6);
+    @include calc(6);
   }
 }
 

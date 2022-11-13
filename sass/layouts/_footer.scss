@@ -1,16 +1,16 @@
 /* -------------Footer------------ */
 
 footer {
-  padding: 60px 15px;
+  padding: 60px 0;
 
   background: #2f303a;
   @include desktop {
-    margin: 0 auto;
-  }
+      }
 }
 
 .footer-address {
   flex-shrink: 0;
+  min-width: 231px;
 }
 
 .logo__footer--dark {
@@ -29,8 +29,9 @@ a.logo.link:focus .logo__footer--dark:not(:focus) {
   @include desktop {
     display: flex;
     align-items: baseline;
-    gap: 70px;
-  }
+    gap: 70px;  
+    margin: 0 auto;
+     }
 }
 
 .footer-soc-title {
@@ -77,15 +78,15 @@ a.logo.link:focus .logo__footer--dark:not(:focus) {
 /* ----------------Address---------------- */
 
 .list-address-item {
-  margin-bottom: 8px;
+   margin-bottom: 8px;
   @include desktop {
     margin-bottom: 9px;
   }
 }
 
-ul.list.address:nth-child(1) {
-  margin-top: 20px;
-}
+ul.list-address:nth-child(1) {
+   margin-top: 20px;
+  }
 
 .address-link {
   color: var(--color-address-link);
@@ -108,7 +109,9 @@ ul.list.address:nth-child(1) {
 }
 
 .footer-form {
-  margin-right: 93px;
+  // margin-right: 93px;
+  margin-left: 23px;
+
 }
 
 .subscribe-title {
@@ -196,8 +199,9 @@ ul.list.address:nth-child(1) {
   @include tablet {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    // justify-content: space-between;
     padding-left: 69px;
     padding-right: 96px;
+    gap: 165px;
   }
 }

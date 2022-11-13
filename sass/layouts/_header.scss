@@ -1,10 +1,15 @@
 /* ----------------Header---------------- */
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
+
+  @include tablet {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .header__container {
@@ -69,11 +74,10 @@ a.logo.link:focus .logo__header--dark:not(:focus) {
   font-family: "Raleway", "sans-serif";
   color: var(--accent-color);
   font-weight: 700;
-  @include tablet {
-    font-size: 24px;
+  font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-  }
+    
   @include desktop {
     font-size: 26px;
     line-height: 1.19;
@@ -203,8 +207,8 @@ a.logo.link:focus .logo__header--dark:not(:focus) {
   margin-right: auto;
 }
 .menu-open-button {
-  margin-left: auto;
-  padding: 0;
+   margin-left: auto;
+   padding: 0;
   background-color: transparent;
   border: none;
   @include tablet {

@@ -10,20 +10,20 @@
   max-width: 1600px;
   text-align: center;
   background-color: #212121;
-  background-image: var(--bg-gradient), url(/images/hero/hero-bg-mobail.jpg);
+  background-image: var(--bg-gradient), url(../images/hero/hero-bg-mobail.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   @include retina {
     background-image: var(--bg-gradient),
-      url(/images/hero/hero-bg-mobail-2x.jpg);
+      url(../images/hero/hero-bg-mobail-2x.jpg);
   }
 
   @include tablet {
     background-image: var(--bg-gradient), url(/images/hero/hero-bg-tablet.jpg);
     @include retina {
       background-image: var(--bg-gradient),
-        url(/images/hero/hero-bg-tablet-2x.jpg);
+        url(../images/hero/hero-bg-tablet-2x.jpg);
     }
   }
 
