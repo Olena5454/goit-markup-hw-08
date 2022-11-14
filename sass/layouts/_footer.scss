@@ -79,6 +79,10 @@ a.logo.link:focus .logo__footer--dark:not(:focus) {
 
 .list-address-item {
    margin-bottom: 8px;
+
+   @include tablet {
+    min-width: 232px;
+  }
   @include desktop {
     margin-bottom: 9px;
   }

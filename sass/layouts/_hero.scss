@@ -20,7 +20,7 @@
   }
 
   @include tablet {
-    background-image: var(--bg-gradient), url(/images/hero/hero-bg-tablet.jpg);
+    background-image: var(--bg-gradient), url(../images/hero/hero-bg-tablet.jpg);
     @include retina {
       background-image: var(--bg-gradient),
         url(../images/hero/hero-bg-tablet-2x.jpg);
@@ -31,10 +31,10 @@
     padding-top: 200px;
     padding-bottom: 200px;
 
-    background-image: var(--bg-gradient), url(/images/hero/hero-bg-desktop.jpg);
+    background-image: var(--bg-gradient), url(../images/hero/hero-bg-desktop.jpg);
     @include retina {
       background-image: var(--bg-gradient),
-        url(/images/hero/hero-bg-desktop-2x.jpg);
+        url(../images/hero/hero-bg-desktop-2x.jpg);
     }
   }
 

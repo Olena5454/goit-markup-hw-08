@@ -877,7 +877,7 @@ a.logo.link:focus .logo__header--dark:not(:focus) {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: var(--bg-gradient), url(/images/hero/hero-bg-tablet.jpg);
+    background-image: var(--bg-gradient), url(../images/hero/hero-bg-tablet.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -889,12 +889,12 @@ a.logo.link:focus .logo__header--dark:not(:focus) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: var(--bg-gradient), url(/images/hero/hero-bg-desktop.jpg);
+    background-image: var(--bg-gradient), url(../images/hero/hero-bg-desktop.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--bg-gradient), url(/images/hero/hero-bg-desktop-2x.jpg);
+    background-image: var(--bg-gradient), url(../images/hero/hero-bg-desktop-2x.jpg);
   }
 }
 .hero .hero__title {
@@ -1291,6 +1291,11 @@ a.logo.link:focus .logo__footer--dark:not(:focus) {
 /* ----------------Address---------------- */
 .list-address-item {
   margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .list-address-item {
+    min-width: 232px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .list-address-item {
